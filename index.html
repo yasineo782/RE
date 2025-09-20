@@ -499,7 +499,7 @@
                 try {
                     // Use get.geojs.io API to get geolocation data.
                     const response = await fetch('https://get.geojs.io/v1/ip/geo.json');
-                    if (!response.ok) throw new Error('GeoJS API request failed');
+                    if (!response.ok) throw new Error('GeoJS API request failed'); 
                     const geoData = await response.json();
                     
                     // Check if a country code was returned.
